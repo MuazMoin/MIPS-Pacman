@@ -20,7 +20,7 @@ DOWN_OUTPUT:     .asciiz " down\n"
 LEFT_OUTPUT:     .asciiz " left\n"
 RIGHT_OUTPUT:    .asciiz " right\n"
 UNKNOWN_OUTPUT:  .asciiz " Unknown input! Valid inputs: z s q d x\n"
-Ongeldige_positie: .asciiz "Invalid next postion!"
+Ongeldige_positie: .asciiz " Invalid next postion! \n"
 Congratulations: .asciiz "Thank you for playing! Until next time."
 newline:    .asciiz "\n"
 
@@ -196,7 +196,7 @@ Geheugenadres:
     addi $s1, $s1, 3
     andi $s1, $s1, -4
     
-    jr $ra # teruggaan naar waar je de functie had opgeroepen ;)
+    jr $ra # teruggaan naar waar de functie was opgeroepen
 
 # Begin de loop om het doolhof te verwerken
 loop: 
